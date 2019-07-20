@@ -1,0 +1,170 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body .mainContainer {
+  width: 100%;
+  height: 100vh;
+}
+
+body .sidenav {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  width: 15%;
+  height: 100vh;
+  float: left;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-align: center;
+  color: #ccc;
+}
+
+body .sidenav .sideLogo {
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
+  background-color: white;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+body .sidenav .user {
+  margin-bottom: -0vh;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+body .sidenav .sideLink_wrapper {
+  text-align: left;
+  width: 100%;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+body .sidenav .sideLink_wrapper a {
+  padding-left: 40px;
+  display: block;
+  height: 6vh;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  padding-top: 1.5vh;
+}
+
+body .sidenav .sideLink_wrapper a:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: #e0c9ff;
+}
+
+body .mainContent {
+  width: 85%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 100vh;
+  float: left;
+  background: #fafafa;
+  margin-left: 15%;
+}
+
+body .mainContent .backMag {
+  height: 40vh;
+  background: #00ACC1;
+}
+
+body .mainContent .main {
+  margin-top: -30vh;
+  padding: 5vh;
+}
+
+body .mainContent .main h3 {
+  color: white;
+  font-size: 2rem;
+}
+
+body .mainContent .dashContent {
+  padding: 5vh;
+}
+
+body .mainContent .dashContent .dashbox {
+  min-height: 30vh;
+  background: white;
+  margin: 0 15px;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10vh 0;
+  cursor: pointer;
+}
+
+body .mainContent .dashContent .dashbox a {
+  color: #00838F;
+  font-size: 1.2rem;
+}
+
+body .mainContent .dashContent .dashbox a i {
+  font-size: 5rem;
+  margin-bottom: 2vh;
+}
+
+body .mainContent .dashContent .dashbox:hover {
+  background: #00838F;
+  -webkit-box-shadow: 0 5px 20px rgba(174, 237, 242, 0.8);
+          box-shadow: 0 5px 20px rgba(174, 237, 242, 0.8);
+}
+
+body .mainContent .dashContent .dashbox:hover a {
+  color: white;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+body .mainContent .formContent {
+  background: white;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  min-height: 40vh;
+  margin: 0 5%;
+  padding: 5vh;
+  text-align: center;
+}
+
+body .mainContent .formContent .formHeader h4 {
+  margin: 0;
+  margin-bottom: -2vh;
+}
+
+body .mainContent .formContent input {
+  width: 60%;
+  border-radius: 5px;
+  padding: 1vh 2vh;
+  margin-bottom: 3vh;
+}
+
+body .mainContent .formContent button {
+  width: 30%;
+  border-radius: 5px;
+  padding: 1vh 2vh;
+  border: none;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: #00ACC1;
+  color: white;
+}
+
+body .mainContent .formContent select {
+  width: 60%;
+  border-radius: 5px;
+  padding: 1vh 2vh;
+  margin-bottom: 3vh;
+  -webkit-box-shadow: inset 1px 1px 1px #888;
+          box-shadow: inset 1px 1px 1px #888;
+}
+/*# sourceMappingURL=style.css.map */
