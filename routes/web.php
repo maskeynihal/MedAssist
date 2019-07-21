@@ -29,6 +29,8 @@ Route::group(
         Route::post('/add', 'DoctorController@addDoctor')->name('doctor.add');
         Route::get('/show', 'DoctorController@showDoctor')->name('show.all.doctor');
         Route::get('/{username}','DoctorController@showProfile')->name('show.single.profile.doctor');
-        Route::get('/{username}/add-schedule','DoctorController@addScheduleForm')->name('show.add.schedule.form');
+        // Route::get('/{username}/add-schedule','DoctorController@addScheduleForm')->name('show.add.schedule.form');
+        Route::post('/{username}/add-schedule','DoctorController@addScheduleForm')->name('show.add.schedule.form');
+        Route::post('/{username}/add-schedule/add','DoctorController@addSchedule')->name('schedule.add');
     }
 );

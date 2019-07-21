@@ -29,7 +29,7 @@
 
                 <a href="#">DASHBOARD</a>
                 <a href="#">USERS</a>
-                <a href="#">DOCTORS</a>
+                <a href="{{route('show.all.doctor')}}">DOCTORS</a>
                 <a href="#">LABS</a>
                 <a href="#">CREATE NEW</a>
 
