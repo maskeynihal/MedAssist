@@ -18,3 +18,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/get-doctors', 'Api\Doctor\DoctorController@getDoctor')->name('get.doctor');
+
+
+Route::get('get-doctors', 'Api\Doctor\DoctorController@getDoctors')->name('get.doctors');
+Route::get('get-available-date', 'Api\Doctor\DoctorController@getAvailableDate')->name('get.available.date');
+Route::get('get-available-time', 'Api\Doctor\DoctorController@getAvailableTime')->name('get.available.time');
+
+Route::get('test', 'Api\Doctor\DoctorController@test');

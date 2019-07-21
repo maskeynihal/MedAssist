@@ -32,5 +32,18 @@ Route::group(
         // Route::get('/{username}/add-schedule','DoctorController@addScheduleForm')->name('show.add.schedule.form');
         Route::post('/{username}/add-schedule','DoctorController@addScheduleForm')->name('show.add.schedule.form');
         Route::post('/{username}/add-schedule/add','DoctorController@addSchedule')->name('schedule.add');
+
+        //DoctorAvaibilityController
+        Route::get('/insert/doc-available', 'DoctorAvaibilityController@insertAvailability')->name('add.doc.available');
+    }
+);
+
+Route::group(
+    [
+
+    ],
+    function(){
+        Route::get('/make-appointment', 'AppointmentController@makeAppointmentForm')->name('maek.appointment.form');
+        Route::post('/make-appointment', 'AppointmentController@submitAppointment')->name('make.appointment');
     }
 );
